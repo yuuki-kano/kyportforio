@@ -1,0 +1,435 @@
+@charset "UTF-8";
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    color: #E13C3C;
+    font-size: 24px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 16px 0 12px 0;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+section:nth-of-type(2n-1) {
+    background-color: #FFDBB9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5C75DA;
+    padding: 11px 23px;
+}
+
+.pc-only {
+    display: none;
+}
+
+.menu-bar li a:hover {
+    text-decoration: underline;
+}
+
+/* drawer */
+.drawer-hamburger {
+    padding: 0px .75rem 15px;
+}
+
+.drawer-overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sp-menu-only li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #666666;
+}
+
+.sp-menu-only li a::after {
+    content: "";
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+    rotate: 45deg;
+
+}
+
+
+.banner {
+    height: 440px;
+}
+
+.introduce p {
+    font-size: 16px;
+}
+
+.news ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.news li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.recommend ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.recommend-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.recommend-item p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+
+.recommend-item .price {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.recommend-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    font-size: 20px;
+    background-color: #E13C3C;
+    color: #fff;
+    gap: 10px;
+    max-width: 380px;
+    margin: 40px auto 0;
+}
+
+.recommend-item a::after {
+    content: "";
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    rotate: 45deg;
+}
+
+.recommend-item a:hover {
+    background-color: #F4AAAA;
+    transition: 0.2s;
+}
+
+table {
+    border: 1px solid #666666;
+    width: 100%;
+    max-width: 589px;
+    margin: 0 auto;
+}
+
+th,
+td {
+    font-size: 14px;
+    border: 1px solid #666666;
+    background-color: #fff;
+    padding: 15px 8px;
+}
+
+th {
+    width: 135px;
+    font-weight: normal;
+}
+
+td {
+    width: 200px;
+}
+
+.access p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+.access {
+    padding: 40px 0 0;
+}
+
+.access iframe {
+    width: 100%;
+    height: 180px;
+}
+
+form label {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 590px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    background-color: #fff;
+    border: 1px solid #C8C8C8;
+    width: 100%;
+    padding: 10px;
+}
+
+textarea {
+    resize: vertical;
+    height: 140px;
+}
+
+.mail {
+    font-size: 14px;
+}
+
+button {
+    padding: 13px;
+    background-color: #E13C3C;
+    color: #fff;
+    width: 160px;
+    margin: 16px auto 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #F4AAAA;
+    transition: 0.2s;
+}
+
+footer {
+    padding: 16px;
+    background-color: #5C75DA;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* タブレットバージョン */
+@media screen and (768px <=width) {
+
+    section {
+        padding: 60px 40px;
+    }
+
+    .sp-menu-only,
+    .drawer-hamburger {
+        display: none;
+    }
+
+    .pc-only {
+        display: block;
+    }
+
+    .menu-bar {
+        display: flex;
+        gap: 27px;
+        align-items: center;
+    }
+
+
+    .banner {
+        height: 600px;
+    }
+
+    .sp-only {
+        display: none;
+    }
+
+    .news ul {
+        width: fit-content;
+        margin-inline: auto;
+        max-width: 798px;
+    }
+
+    .news li {
+        flex-direction: row;
+    }
+
+    .date {
+        width: 100px;
+    }
+
+
+    .date {
+        width: 100px;
+    }
+
+    .recommend ul {
+        flex-direction: row;
+    }
+
+    .recommend li {
+        flex: 1;
+    }
+
+    .recommend-item ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .recommend-item li {
+        width: calc(50% - 20px);
+    }
+
+    .access iframe {
+        height: 250px;
+    }
+
+}
+
+
+/* PCバージョン */
+@media screen and (1024px <=width) {
+
+    .menu-bar a {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 56px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin: 24px 0;
+    }
+
+    section {
+        padding: 80px 110px;
+    }
+
+    header {
+        padding: 14px 120px;
+    }
+
+    .introduce {
+        display: flex;
+        justify-content: center;
+    }
+
+    .introduce p {
+        font-size: 20px;
+        max-width: 794px;
+    }
+
+    .news p {
+        font-size: 20px;
+    }
+
+    .news-content {
+        width: 660px;
+    }
+
+    .news li {
+        justify-content: space-between;
+    }
+
+    .recommend-item li {
+        width: auto;
+        flex: 1;
+    }
+
+
+    .recommend-item p {
+        margin-bottom: 24px;
+    }
+
+    .recommend-item a {
+        margin: 80px auto 0;
+    }
+
+    th,
+    td {
+        font-size: 24px;
+        padding: 18px 16px;
+    }
+
+    th {
+        width: 210px;
+    }
+
+    td {
+        width: 380px;
+    }
+
+    .access p {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .access {
+        padding: 80px 0 0;
+    }
+
+    .access iframe {
+        height: 400px;
+    }
+
+    form {
+        gap: 32px;
+    }
+
+    .mail {
+        font-size: 18px;
+    }
+
+    input,
+    textarea {
+        padding: 20px;
+    }
+
+    button {
+        padding: 24px;
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 24px;
+        font-size: 16px;
+    }
+}
